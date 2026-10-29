@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thirawat Phumchalsual - Resume</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #292929;
+  font-family: Arial, sans-serif;
+  color: #09162c;
+}
+
+.resume {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 34% 66%;
+  background: white;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #1115;
+}
+
+.sidebar {
+  background: #0b162b;
+  color: white;
+  padding: 35px 25px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00cfff;
+  box-shadow: 0 0 18px #00cfff66;
+}
+
+.profile h1 {
+  font-size: 22px;
+  margin: 20px 0 6px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #00cfff;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.sidebar h3 {
+  margin-top: 28px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #293b54;
+  color: #a5bcd6;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.contact p {
+  font-size: 12px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.contact span {
+  color: #00cfff;
+  margin-right: 8px;
+}
+
+.skill-title {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 13px 0 6px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  color: #58caff;
+  background: #102a4b;
+  border: 1px solid #1674d1;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-size: 11px;
+}
+
+.language {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.language span:last-child {
+  color: #00cfff;
+}
+
+.main {
+  padding: 35px 38px;
+}
+
+.section {
+  margin-bottom: 26px;
+}
+
+.section h2 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #cad6e6;
+  padding-bottom: 7px;
+  margin: 0 0 14px;
+}
+
+.section p, .section li {
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.summary {
+  text-align: justify;
+}
+
+.school {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.degree {
+  font-size: 12px;
+  color: #0075dc;
+  margin-top: 4px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 20px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.course-grid div::before {
+  content: "• ";
+  color: #0075dc;
+}
+
+.project {
+  margin: 17px 0;
+}
+
+.project h3 {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+ul {
+  padding-left: 16px;
+  margin: 7px 0;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+li::marker {
+  color: #0075dc;
+}
+
+@media (max-width: 650px) {
+  body { padding: 0; }
+  .resume { grid-template-columns: 1fr; }
+  .sidebar, .main { padding: 25px; }
+}
+</style>
+</head>
+
+<body>
+<div class="resume">
+
+<aside class="sidebar">
+  <div class="profile">
+    <img src="profile.jpg" alt="Profile Photo">
+    <h1>THIRAWAT<br>PHUMCHALSUAL</h1>
+    <div class="subtitle">
+      Mathematics with Computer Science<br>
+      Student (MC)
+    </div>
+  </div>
+
+  <h3>CONTACT</h3>
+  <div class="contact">
+    <p><span>✉</span>
+    s6704022610525@email.kmutnb.ac.th</p>
+    <p><span>☎</span> 062-664-5526</p>
+    <p><span>📍</span> KMUTNB, Bangkok, Thailand</p>
+  </div>
+
+  <h3>SKILLS</h3>
+
+  <div class="skill-title">Programming</div>
+  <div class="tags">
+    <span class="tag">HTML/CSS</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">Python</span>
+    <span class="tag">R</span>
+    <span class="tag">C++</span>
+    <span class="tag">SQL</span>
+  </div>
+
+  <div class="skill-title">Mathematics</div>
+  <div class="tags">
+    <span class="tag">Calculus</span>
+    <span class="tag">Linear Algebra</span>
+    <span class="tag">Statistics</span>
+    <span class="tag">Discrete Math</span>
+  </div>
+
+  <div class="skill-title">Tools & Networking</div>
+  <div class="tags">
+    <span class="tag">Git / GitHub</span>
+    <span class="tag">VS Code</span>
+    <span class="tag">Outlook (IMAP/POP3)</span>
+    <span class="tag">TCP/IP & DNS</span>
+  </div>
+
+  <div class="skill-title">Soft Skills</div>
+  <div class="tags">
+    <span class="tag">Analytical Thinking</span>
+    <span class="tag">Problem Solving</span>
+    <span class="tag">Team Collaboration</span>
+    <span class="tag">Time Management</span>
+  </div>
+
+  <h3>LANGUAGES</h3>
+  <div class="language">
+    <span>Thai</span><span>Native</span>
+  </div>
+  <div class="language">
+    <span>English</span><span>Intermediate</span>
+  </div>
+</aside>
+
+<main class="main">
+
+  <section class="section">
+    <h2>PROFESSIONAL SUMMARY</h2>
+    <p class="summary">
+      A highly motivated Mathematics and Computer
+      Science student (MC) at KMUTNB with a strong
+      foundation in logical reasoning, data communication,
+      and quantitative analysis. Passionate about applying
+      mathematical concepts and modern web technologies
+      to build efficient software solutions and manage
+      network architectures.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>EDUCATION</h2>
+    <div class="school">
+      King Mongkut's University of Technology
+      North Bangkok (KMUTNB)
+    </div>
+    <div class="degree">
+      Bachelor of Science in Mathematics with
+      Computer Science (MC) | 2024 - Present
+    </div>
+
+    <p><strong>Relevant Coursework:</strong></p>
+    <div class="course-grid">
+      <div>Data Communication (DN 2026)</div>
+      <div>Discrete Mathematics</div>
+      <div>Data Structures & Algorithms</div>
+      <div>Database Systems (SQL)</div>
+      <div>Numerical Analysis</div>
+      <div>Probability & Statistics</div>
+      <div>Object-Oriented Programming</div>
+      <div>Linear Algebra</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>ACADEMIC PROJECTS</h2>
+
+    <div class="project">
+      <h3>Domain & Web Hosting Setup</h3>
+      <ul>
+        <li>
+          Configured custom repository and sub-domain
+          routing on GitHub Pages for static website hosting.
+        </li>
+        <li>
+          Designed and deployed responsive card-based
+          resume web applications using HTML5 and CSS3.
+        </li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Email Client Integration Project</h3>
+      <ul>
+        <li>
+          Configured university mail accounts on desktop
+          mail clients using secure IMAP/POP3 protocols
+          with SSL/TLS.
+        </li>
+        <li>
+          Implemented automated email signatures with
+          institutional branding, custom email headers
+          (CC/BCC), and filtering rules.
+        </li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Statistical Data Analysis & Mathematical Modeling</h3>
+      <ul>
+        <li>
+          Applied mathematical modeling and statistical
+          methods to analyze datasets and visualize trends.
+        </li>
+        <li>
+          Developed structured algorithms and database
+          queries to process academic data efficiently.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>TECHNICAL COMPETENCIES & ACTIVITIES</h2>
+    <ul>
+      <li>
+        <strong>Network & Protocol Configuration:</strong>
+        Hands-on experience with DNS management,
+        HTTP/HTTPS web hosting, and email transfer
+        protocols (SMTP, IMAP, POP3).
+      </li>
+      <li>
+        <strong>Software Development:</strong>
+        Proficient in writing clean, maintainable code
+        in Python, C++, and web technologies with
+        version control via Git.
+      </li>
+      <li>
+        <strong>Academic Engagement:</strong>
+        Active participant in Faculty of Applied
+        Science workshops and collaborative computer
+        science projects at KMUTNB.
+      </li>
+    </ul>
+  </section>
+
+</main>
+</div>
+</body>
+</html>
