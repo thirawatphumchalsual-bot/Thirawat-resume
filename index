@@ -3,34 +3,42 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thirawat Phumchalsual - Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thirawat Phumchalsual | Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  padding: 20px;
   background: #292929;
-  font-family: Arial, sans-serif;
-  color: #09162c;
+  font-family: Roboto, Arial, sans-serif;
+  color: #07152c;
+  font-size: 12px;
 }
 
-.resume {
-  max-width: 1000px;
-  margin: auto;
+.page {
+  width: 900px;
+  min-height: 938px;
+  margin: 4px auto;
+  background: #fff;
   display: grid;
-  grid-template-columns: 34% 66%;
-  background: white;
-  border-radius: 7px;
+  grid-template-columns: 306px 594px;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 5px 20px #1115;
+  box-shadow: 0 2px 12px #0002;
 }
 
-.sidebar {
-  background: #0b162b;
-  color: white;
-  padding: 35px 25px;
+/* LEFT SIDEBAR */
+
+.left {
+  background: #0b162a;
+  color: #fff;
+  padding: 36px 24px 30px;
 }
 
 .profile {
@@ -38,181 +46,278 @@ body {
 }
 
 .profile img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
-  border: 3px solid #00cfff;
-  box-shadow: 0 0 18px #00cfff66;
+  border: 3px solid #00d4ff;
+  object-fit: cover;
+  box-shadow: 0 0 18px #00caff80;
 }
 
 .profile h1 {
-  font-size: 22px;
-  margin: 20px 0 6px;
-  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.18;
+  letter-spacing: .5px;
+  font-weight: 900;
+  margin: 20px 0 5px;
 }
 
 .subtitle {
-  color: #00cfff;
   font-size: 13px;
-  line-height: 1.5;
+  color: #00bfff;
+  line-height: 19px;
 }
 
-.sidebar h3 {
-  margin-top: 28px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #293b54;
-  color: #a5bcd6;
-  font-size: 13px;
-  letter-spacing: 2px;
+.left h2 {
+  font-size: 12px;
+  letter-spacing: 1.7px;
+  color: #9db6d4;
+  margin: 25px 0 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #26334a;
+}
+
+/* CONTACT */
+
+.contact {
+  font-size: 11px;
 }
 
 .contact p {
-  font-size: 12px;
-  line-height: 1.8;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0;
   overflow-wrap: anywhere;
 }
 
-.contact span {
-  color: #00cfff;
-  margin-right: 8px;
+.contact .sym {
+  width: 16px;
+  color: #00c6ff;
+  text-align: center;
+  flex-shrink: 0;
 }
 
-.skill-title {
-  font-size: 12px;
-  font-weight: bold;
-  margin: 13px 0 6px;
+/* SKILLS */
+
+.skill-label {
+  font-size: 11px;
+  font-weight: 700;
+  margin: 12px 0 6px;
 }
 
 .tags {
   display: flex;
-  flex-wrap: wrap;
   gap: 5px;
+  flex-wrap: wrap;
 }
 
 .tag {
-  color: #58caff;
-  background: #102a4b;
-  border: 1px solid #1674d1;
+  font-size: 10px;
+  color: #50c5ff;
+  background: #0d2648;
+  border: 1px solid #156bd2;
   border-radius: 4px;
-  padding: 5px 8px;
-  font-size: 11px;
+  padding: 4px 8px;
 }
+
+/* LANGUAGES */
 
 .language {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
-  margin: 8px 0;
+  margin: 7px 0;
+  font-size: 11px;
 }
 
 .language span:last-child {
-  color: #00cfff;
+  color: #00bfff;
 }
 
-.main {
-  padding: 35px 38px;
+/* RIGHT CONTENT */
+
+.right {
+  padding: 37px 35px 25px;
 }
 
 .section {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .section h2 {
-  font-size: 15px;
-  letter-spacing: 1px;
-  border-bottom: 2px solid #cad6e6;
-  padding-bottom: 7px;
-  margin: 0 0 14px;
-}
-
-.section p, .section li {
-  font-size: 12px;
-  line-height: 1.65;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .65px;
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #cbd7e7;
 }
 
 .summary {
+  font-size: 12px;
+  line-height: 20px;
   text-align: justify;
+  margin: 0;
 }
 
+/* EDUCATION */
+
 .school {
-  font-size: 14px;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 3px;
 }
 
 .degree {
+  color: #0075e5;
   font-size: 12px;
-  color: #0075dc;
-  margin-top: 4px;
+  font-weight: 600;
 }
 
-.course-grid {
+.course-title {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 10px 0 6px;
+}
+
+.courses {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4px 20px;
-  margin-top: 10px;
-  font-size: 12px;
+  gap: 6px 20px;
+  font-size: 11px;
 }
 
-.course-grid div::before {
-  content: "• ";
-  color: #0075dc;
+.courses div:before {
+  content: '•';
+  color: #0076e7;
+  margin-right: 6px;
 }
+
+/* PROJECTS */
 
 .project {
-  margin: 17px 0;
+  margin-bottom: 16px;
+}
+
+.project-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 5px;
 }
 
 .project h3 {
   font-size: 13px;
-  margin-bottom: 6px;
+  margin: 0;
+  font-weight: 800;
 }
 
-ul {
-  padding-left: 16px;
-  margin: 7px 0;
+.pill {
+  font-size: 10px;
+  border: 1px solid #cbd8e7;
+  background: #f4f7fc;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
-li {
-  padding-bottom: 5px;
+.project ul,
+.activities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-li::marker {
-  color: #0075dc;
+.project li,
+.activities li {
+  position: relative;
+  padding-left: 12px;
+  font-size: 11.5px;
+  line-height: 18px;
+  margin: 4px 0;
 }
 
-@media (max-width: 650px) {
-  body { padding: 0; }
-  .resume { grid-template-columns: 1fr; }
-  .sidebar, .main { padding: 25px; }
+.project li:before,
+.activities li:before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0074db;
+  font-weight: bold;
+}
+
+.activities strong {
+  font-weight: 800;
+}
+
+@media (max-width: 920px) {
+  body {
+    overflow-x: auto;
+  }
+  .page {
+    margin: 4px auto;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+  .page {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
 }
 </style>
 </head>
 
 <body>
-<div class="resume">
+<div class="page">
 
-<aside class="sidebar">
+<!-- LEFT SIDEBAR -->
+<aside class="left">
+
   <div class="profile">
-    <img src="profile.jpg" alt="Profile Photo">
-    <h1>THIRAWAT<br>PHUMCHALSUAL</h1>
+    <img src="profile.jpg" alt="Profile photo">
+
+    <h1>
+      THIRAWAT<br>
+      PHUMCHALSUAL
+    </h1>
+
     <div class="subtitle">
       Mathematics with Computer Science<br>
       Student (MC)
     </div>
   </div>
 
-  <h3>CONTACT</h3>
+  <!-- CONTACT -->
+  <h2>CONTACT</h2>
+
   <div class="contact">
-    <p><span>✉</span>
-    s6704022610525@email.kmutnb.ac.th</p>
-    <p><span>☎</span> 062-664-5526</p>
-    <p><span>📍</span> KMUTNB, Bangkok, Thailand</p>
+    <p>
+      <span class="sym">✉</span>
+      <span>s6704022610525@email.kmutnb.ac.th</span>
+    </p>
+
+    <p>
+      <span class="sym">☎</span>
+      <span>062-664-5526</span>
+    </p>
+
+    <p>
+      <span class="sym">📍</span>
+      <span>KMUTNB, Bangkok, Thailand</span>
+    </p>
   </div>
 
-  <h3>SKILLS</h3>
+  <!-- SKILLS -->
+  <h2>SKILLS</h2>
 
-  <div class="skill-title">Programming</div>
+  <div class="skill-label">Programming</div>
   <div class="tags">
     <span class="tag">HTML/CSS</span>
     <span class="tag">JavaScript</span>
@@ -222,7 +327,7 @@ li::marker {
     <span class="tag">SQL</span>
   </div>
 
-  <div class="skill-title">Mathematics</div>
+  <div class="skill-label">Mathematics</div>
   <div class="tags">
     <span class="tag">Calculus</span>
     <span class="tag">Linear Algebra</span>
@@ -230,7 +335,7 @@ li::marker {
     <span class="tag">Discrete Math</span>
   </div>
 
-  <div class="skill-title">Tools & Networking</div>
+  <div class="skill-label">Tools & Networking</div>
   <div class="tags">
     <span class="tag">Git / GitHub</span>
     <span class="tag">VS Code</span>
@@ -238,7 +343,7 @@ li::marker {
     <span class="tag">TCP/IP & DNS</span>
   </div>
 
-  <div class="skill-title">Soft Skills</div>
+  <div class="skill-label">Soft Skills</div>
   <div class="tags">
     <span class="tag">Analytical Thinking</span>
     <span class="tag">Problem Solving</span>
@@ -246,43 +351,58 @@ li::marker {
     <span class="tag">Time Management</span>
   </div>
 
-  <h3>LANGUAGES</h3>
+  <!-- LANGUAGES -->
+  <h2>LANGUAGES</h2>
+
   <div class="language">
-    <span>Thai</span><span>Native</span>
+    <span>Thai</span>
+    <span>Native</span>
   </div>
+
   <div class="language">
-    <span>English</span><span>Intermediate</span>
+    <span>English</span>
+    <span>Intermediate</span>
   </div>
+
 </aside>
 
-<main class="main">
+<!-- RIGHT CONTENT -->
+<main class="right">
 
+  <!-- SUMMARY -->
   <section class="section">
     <h2>PROFESSIONAL SUMMARY</h2>
+
     <p class="summary">
-      A highly motivated Mathematics and Computer
-      Science student (MC) at KMUTNB with a strong
-      foundation in logical reasoning, data communication,
-      and quantitative analysis. Passionate about applying
-      mathematical concepts and modern web technologies
-      to build efficient software solutions and manage
-      network architectures.
+      A highly motivated Mathematics and Computer Science
+      student (MC) at KMUTNB with a strong foundation in
+      logical reasoning, data communication, and quantitative
+      analysis. Passionate about applying mathematical
+      concepts and modern web technologies to build
+      efficient software solutions and manage network
+      architectures.
     </p>
   </section>
 
+  <!-- EDUCATION -->
   <section class="section">
     <h2>EDUCATION</h2>
+
     <div class="school">
       King Mongkut's University of Technology
       North Bangkok (KMUTNB)
     </div>
+
     <div class="degree">
-      Bachelor of Science in Mathematics with
-      Computer Science (MC) | 2024 - Present
+      Bachelor of Science in Mathematics with Computer
+      Science (MC) | 2024 - Present
     </div>
 
-    <p><strong>Relevant Coursework:</strong></p>
-    <div class="course-grid">
+    <div class="course-title">
+      Relevant Coursework:
+    </div>
+
+    <div class="courses">
       <div>Data Communication (DN 2026)</div>
       <div>Discrete Mathematics</div>
       <div>Data Structures & Algorithms</div>
@@ -294,11 +414,16 @@ li::marker {
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section class="section">
     <h2>ACADEMIC PROJECTS</h2>
 
     <div class="project">
-      <h3>Domain & Web Hosting Setup</h3>
+      <div class="project-heading">
+        <h3>Domain & Web Hosting Setup</h3>
+        <span class="pill">GitHub Pages • Cloud</span>
+      </div>
+
       <ul>
         <li>
           Configured custom repository and sub-domain
@@ -306,13 +431,18 @@ li::marker {
         </li>
         <li>
           Designed and deployed responsive card-based
-          resume web applications using HTML5 and CSS3.
+          resume web applications using HTML5 and CSS3
+          for academic evaluation.
         </li>
       </ul>
     </div>
 
     <div class="project">
-      <h3>Email Client Integration Project</h3>
+      <div class="project-heading">
+        <h3>Email Client Integration Project</h3>
+        <span class="pill">IMAP • POP3 • Outlook</span>
+      </div>
+
       <ul>
         <li>
           Configured university mail accounts on desktop
@@ -328,40 +458,53 @@ li::marker {
     </div>
 
     <div class="project">
-      <h3>Statistical Data Analysis & Mathematical Modeling</h3>
+      <div class="project-heading">
+        <h3>
+          Statistical Data Analysis & Mathematical Modeling
+        </h3>
+        <span class="pill">Python • R • SQL</span>
+      </div>
+
       <ul>
         <li>
           Applied mathematical modeling and statistical
-          methods to analyze datasets and visualize trends.
+          methods to analyze datasets and visualize
+          key trends.
         </li>
         <li>
           Developed structured algorithms and database
-          queries to process academic data efficiently.
+          queries to process and manage academic
+          data efficiently.
         </li>
       </ul>
     </div>
+
   </section>
 
+  <!-- TECHNICAL COMPETENCIES -->
   <section class="section">
     <h2>TECHNICAL COMPETENCIES & ACTIVITIES</h2>
-    <ul>
+
+    <ul class="activities">
       <li>
         <strong>Network & Protocol Configuration:</strong>
         Hands-on experience with DNS management,
         HTTP/HTTPS web hosting, and email transfer
         protocols (SMTP, IMAP, POP3).
       </li>
+
       <li>
         <strong>Software Development:</strong>
         Proficient in writing clean, maintainable code
         in Python, C++, and web technologies with
         version control via Git.
       </li>
+
       <li>
         <strong>Academic Engagement:</strong>
-        Active participant in Faculty of Applied
-        Science workshops and collaborative computer
-        science projects at KMUTNB.
+        Active participant in Faculty of Applied Science
+        workshops and collaborative computer science
+        projects at KMUTNB.
       </li>
     </ul>
   </section>
