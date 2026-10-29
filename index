@@ -25,7 +25,7 @@ body {
   width: 900px;
   min-height: 938px;
   margin: 4px auto;
-  background: #fff;
+  background: white;
   display: grid;
   grid-template-columns: 306px 594px;
   border-radius: 6px;
@@ -33,11 +33,11 @@ body {
   box-shadow: 0 2px 12px #0002;
 }
 
-/* LEFT SIDEBAR */
+/* LEFT SIDE */
 
 .left {
   background: #0b162a;
-  color: #fff;
+  color: white;
   padding: 36px 24px 30px;
 }
 
@@ -51,6 +51,7 @@ body {
   border-radius: 50%;
   border: 3px solid #00d4ff;
   object-fit: cover;
+  object-position: center;
   box-shadow: 0 0 18px #00caff80;
 }
 
@@ -76,8 +77,6 @@ body {
   padding-bottom: 7px;
   border-bottom: 1px solid #26334a;
 }
-
-/* CONTACT */
 
 .contact {
   font-size: 11px;
@@ -121,8 +120,6 @@ body {
   padding: 4px 8px;
 }
 
-/* LANGUAGES */
-
 .language {
   display: flex;
   justify-content: space-between;
@@ -134,7 +131,7 @@ body {
   color: #00bfff;
 }
 
-/* RIGHT CONTENT */
+/* RIGHT SIDE */
 
 .right {
   padding: 37px 35px 25px;
@@ -159,8 +156,6 @@ body {
   text-align: justify;
   margin: 0;
 }
-
-/* EDUCATION */
 
 .school {
   font-weight: 800;
@@ -188,12 +183,10 @@ body {
 }
 
 .courses div:before {
-  content: '•';
+  content: "•";
   color: #0076e7;
   margin-right: 6px;
 }
-
-/* PROJECTS */
 
 .project {
   margin-bottom: 16px;
@@ -240,7 +233,7 @@ body {
 
 .project li:before,
 .activities li:before {
-  content: '›';
+  content: "›";
   position: absolute;
   left: 0;
   top: 0;
@@ -256,9 +249,6 @@ body {
   body {
     overflow-x: auto;
   }
-  .page {
-    margin: 4px auto;
-  }
 }
 
 @media print {
@@ -268,20 +258,23 @@ body {
   .page {
     margin: 0;
     box-shadow: none;
-    border-radius: 0;
   }
 }
 </style>
 </head>
 
 <body>
+
 <div class="page">
 
 <!-- LEFT SIDEBAR -->
+
 <aside class="left">
 
   <div class="profile">
-    <img src="profile.jpg" alt="Profile photo">
+
+    <!-- PROFILE IMAGE -->
+    <img src="profile.jpg" alt="Profile Photo">
 
     <h1>
       THIRAWAT<br>
@@ -292,12 +285,15 @@ body {
       Mathematics with Computer Science<br>
       Student (MC)
     </div>
+
   </div>
 
   <!-- CONTACT -->
+
   <h2>CONTACT</h2>
 
   <div class="contact">
+
     <p>
       <span class="sym">✉</span>
       <span>s6704022610525@email.kmutnb.ac.th</span>
@@ -312,12 +308,15 @@ body {
       <span class="sym">📍</span>
       <span>KMUTNB, Bangkok, Thailand</span>
     </p>
+
   </div>
 
   <!-- SKILLS -->
+
   <h2>SKILLS</h2>
 
   <div class="skill-label">Programming</div>
+
   <div class="tags">
     <span class="tag">HTML/CSS</span>
     <span class="tag">JavaScript</span>
@@ -328,6 +327,7 @@ body {
   </div>
 
   <div class="skill-label">Mathematics</div>
+
   <div class="tags">
     <span class="tag">Calculus</span>
     <span class="tag">Linear Algebra</span>
@@ -336,6 +336,7 @@ body {
   </div>
 
   <div class="skill-label">Tools & Networking</div>
+
   <div class="tags">
     <span class="tag">Git / GitHub</span>
     <span class="tag">VS Code</span>
@@ -344,6 +345,7 @@ body {
   </div>
 
   <div class="skill-label">Soft Skills</div>
+
   <div class="tags">
     <span class="tag">Analytical Thinking</span>
     <span class="tag">Problem Solving</span>
@@ -352,6 +354,7 @@ body {
   </div>
 
   <!-- LANGUAGES -->
+
   <h2>LANGUAGES</h2>
 
   <div class="language">
@@ -367,10 +370,13 @@ body {
 </aside>
 
 <!-- RIGHT CONTENT -->
+
 <main class="right">
 
-  <!-- SUMMARY -->
+  <!-- PROFESSIONAL SUMMARY -->
+
   <section class="section">
+
     <h2>PROFESSIONAL SUMMARY</h2>
 
     <p class="summary">
@@ -382,10 +388,13 @@ body {
       efficient software solutions and manage network
       architectures.
     </p>
+
   </section>
 
   <!-- EDUCATION -->
+
   <section class="section">
+
     <h2>EDUCATION</h2>
 
     <div class="school">
@@ -394,8 +403,8 @@ body {
     </div>
 
     <div class="degree">
-      Bachelor of Science in Mathematics with Computer
-      Science (MC) | 2024 - Present
+      Bachelor of Science in Mathematics with
+      Computer Science (MC) | 2024 - Present
     </div>
 
     <div class="course-title">
@@ -412,13 +421,17 @@ body {
       <div>Object-Oriented Programming</div>
       <div>Linear Algebra</div>
     </div>
+
   </section>
 
-  <!-- PROJECTS -->
+  <!-- ACADEMIC PROJECTS -->
+
   <section class="section">
+
     <h2>ACADEMIC PROJECTS</h2>
 
     <div class="project">
+
       <div class="project-heading">
         <h3>Domain & Web Hosting Setup</h3>
         <span class="pill">GitHub Pages • Cloud</span>
@@ -435,9 +448,11 @@ body {
           for academic evaluation.
         </li>
       </ul>
+
     </div>
 
     <div class="project">
+
       <div class="project-heading">
         <h3>Email Client Integration Project</h3>
         <span class="pill">IMAP • POP3 • Outlook</span>
@@ -455,9 +470,11 @@ body {
           (CC/BCC), and filtering rules.
         </li>
       </ul>
+
     </div>
 
     <div class="project">
+
       <div class="project-heading">
         <h3>
           Statistical Data Analysis & Mathematical Modeling
@@ -477,15 +494,19 @@ body {
           data efficiently.
         </li>
       </ul>
+
     </div>
 
   </section>
 
   <!-- TECHNICAL COMPETENCIES -->
+
   <section class="section">
+
     <h2>TECHNICAL COMPETENCIES & ACTIVITIES</h2>
 
     <ul class="activities">
+
       <li>
         <strong>Network & Protocol Configuration:</strong>
         Hands-on experience with DNS management,
@@ -506,10 +527,14 @@ body {
         workshops and collaborative computer science
         projects at KMUTNB.
       </li>
+
     </ul>
+
   </section>
 
 </main>
+
 </div>
+
 </body>
 </html>
